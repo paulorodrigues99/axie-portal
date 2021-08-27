@@ -25,13 +25,12 @@ const Home = () => (
           fontSize={{ base: "1.5rem", sm: "2rem", lg: "3rem" }}
           fontWeight="800"
         >
-          Help your team for tracking projects better.
+          Venha fazer parte desse time com R$ 0 de investimento.
         </Heading>
         <Text fontWeight="400" pt="4" pb="10">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore atque
-          perspiciatis qui ex ducimus nesciunt et nam. In amet earum optio cum
-          aperiam autem, possimus vero voluptates! Laboriosam, possimus
-          aspernatur.
+          Axie Infinity é um videogame online baseado em NFT desenvolvido pelo
+          estúdio vietnamita Sky Mavis, que usa criptomoeda AXS e SLP baseados
+          em Ethereum.
         </Text>
         <Box
           display="flex"
@@ -39,16 +38,6 @@ const Home = () => (
           alignItems="center"
           flexDir={{ base: "column", lg: "row" }}
         >
-          <Button
-            colorScheme="facebook"
-            variant="solid"
-            mb="2"
-            mr={{ lg: "5" }}
-            fontWeight="600"
-            size="lg"
-          >
-            Create new account
-          </Button>
           <Button
             colorScheme="facebook"
             variant="outline"
