@@ -60,17 +60,25 @@ function AirbnbExample() {
           <br></br>
           <List spacing={2}>
             <ListItem>
-              Eu como um usuário quero ter acesso a plataforma por meio de login
-              e senha
-            </ListItem>
-            <ListItem>Eu como um aluno desejo alugar uma conta</ListItem>
-            <ListItem>
-              Eu como usuário quero ter disponível pra mim um status de
-              aprovação do meu login no jogo.
+              <Text>
+                Eu como um usuário quero ter acesso a plataforma por meio de
+                login e senha
+              </Text>
             </ListItem>
             <ListItem>
-              Eu como usuário desejo ter acesso a um contrato virtual garantindo
-              meus serviços
+              <Text>Eu como um aluno desejo alugar uma conta</Text>
+            </ListItem>
+            <ListItem>
+              <Text>
+                Eu como usuário quero ter disponível pra mim um status de
+                aprovação do meu login no jogo.
+              </Text>
+            </ListItem>
+            <ListItem>
+              <Text>
+                Eu como usuário desejo ter acesso a um contrato virtual
+                garantindo meus serviços
+              </Text>
             </ListItem>
           </List>
           <br></br>
