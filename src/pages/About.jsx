@@ -60,22 +60,22 @@ function AirbnbExample() {
           <br></br>
           <List spacing={2}>
             <ListItem>
-              <Text as="p">
+              <Text as="p" isTruncated>
                 Eu como um usuário quero ter acesso a plataforma por meio de
                 login e senha
               </Text>
             </ListItem>
             <ListItem>
-              <Text as="p">Eu como um aluno desejo alugar uma conta</Text>
+              <Text as="p" isTruncated>Eu como um aluno desejo alugar uma conta</Text>
             </ListItem>
             <ListItem>
-              <Text as="p">
+              <Text as="p" isTruncated>
                 Eu como usuário quero ter disponível pra mim um status de
                 aprovação do meu login no jogo.
               </Text>
             </ListItem>
             <ListItem>
-              <Text as="p">
+              <Text as="p" isTruncated>
                 Eu como usuário desejo ter acesso a um contrato virtual
                 garantindo meus serviços
               </Text>

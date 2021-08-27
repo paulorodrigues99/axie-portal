@@ -6,5 +6,5 @@ export default {
 export const links = [
   { title: "Home", path: "/" },
   { title: "About", path: "/About" },
-  { title: "Contact", path: "/contact" },
+  { title: "Cadastre-se", path: "/signin" },
 ];
