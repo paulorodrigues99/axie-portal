@@ -1,7 +1,7 @@
 // Sample card from Airbnb
 
 import { StarIcon } from "@chakra-ui/icons";
-import { Badge, Box, Heading, Image } from "@chakra-ui/react";
+import { Badge, Box, Heading, Image, Text } from "@chakra-ui/react";
 import strategy from "../../public/asset/arquitetura-1.png";
 import {
   List,
@@ -60,22 +60,22 @@ function AirbnbExample() {
           <br></br>
           <List spacing={2}>
             <ListItem>
-              <Text>
+              <Text as="p">
                 Eu como um usuário quero ter acesso a plataforma por meio de
                 login e senha
               </Text>
             </ListItem>
             <ListItem>
-              <Text>Eu como um aluno desejo alugar uma conta</Text>
+              <Text as="p">Eu como um aluno desejo alugar uma conta</Text>
             </ListItem>
             <ListItem>
-              <Text>
+              <Text as="p">
                 Eu como usuário quero ter disponível pra mim um status de
                 aprovação do meu login no jogo.
               </Text>
             </ListItem>
             <ListItem>
-              <Text>
+              <Text as="p">
                 Eu como usuário desejo ter acesso a um contrato virtual
                 garantindo meus serviços
               </Text>
