@@ -23,12 +23,17 @@ function SignInPage() {
   let sucessMessage = true;
   const handleFormInput = async (event) => {
     event.preventDefault();
-    console.log("CHegou");
     const msg = `${email}|${telefone}|${cidade}|${estado}|${instagram}`;
     try {
       axios.get(
         `https://api.telegram.org/bot1907611009:AAHd_RN1HrYDaGHB0FNUohHcL_4vkQbiTw8/sendMessage?chat_id=-432866452&text=${msg}`
       );
+      // Limpar os valores
+      setEmail("");
+      setEstado("");
+      setCidade("");
+      setInstagram("");
+      setTelefone("");
     } catch (error) {
       console.log(error);
     }
@@ -50,10 +55,11 @@ function SignInPage() {
         borderRadius="lg"
         overflow="hidden"
       >
-        <form onReset onSubmit={handleFormInput}>
+        <form onSubmit={handleFormInput}>
           <FormControl id="email">
             <FormLabel>Email address</FormLabel>
             <Input
+              value={email}
               onChange={(event) => setEmail(event.target.value)}
               type="email"
             />
@@ -62,6 +68,7 @@ function SignInPage() {
           <FormControl id="city">
             <FormLabel>Cidade</FormLabel>
             <Input
+              value={cidade}
               onChange={(event) => setCidade(event.target.value)}
               type="text"
             />
@@ -69,6 +76,7 @@ function SignInPage() {
           <FormControl id="state">
             <FormLabel>Estado</FormLabel>
             <Input
+              value={estado}
               onChange={(event) => setEstado(event.target.value)}
               type="text"
             />
@@ -76,6 +84,7 @@ function SignInPage() {
           <FormControl id="instagram">
             <FormLabel>Instagram</FormLabel>
             <Input
+              value={instagram}
               onChange={(event) => setInstagram(event.target.value)}
               type="text"
             />
@@ -83,6 +92,7 @@ function SignInPage() {
           <FormControl id="cellphone">
             <FormLabel>Telefone</FormLabel>
             <Input
+              value={telefone}
               onChange={(event) => setTelefone(event.target.value)}
               type="text"
             />
@@ -92,7 +102,7 @@ function SignInPage() {
         </form>
         <br></br>
         <Stack spacing={3}>
-          <Button >
+          <Button>
             <Link href="https://t.me/joinchat/d5-tSUIpOZ0yNGQx">
               Quero entrar no grupo do telegram
             </Link>
